@@ -1,0 +1,8 @@
+[MASTER]
+fail-under=8
+
+[MESSAGES CONTROL]
+
+# We disabled protected-access as we want to have tests for some protected methods
+disable=protected-access,
+        line-too-long

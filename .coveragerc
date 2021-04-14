@@ -1,0 +1,3 @@
+[report]
+# Fail coverage if it is < 30% for now
+fail_under = 80

@@ -1,0 +1,16 @@
+# Environments
+.env/
+venv/
+test_venv/
+
+# Installations
+dist/
+build/
+*.egg-info/
+
+# IDE and tests specific folders
+.idea/
+.pytest_cache/
+
+# Coverage files
+*.coverage

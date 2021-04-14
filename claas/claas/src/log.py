@@ -27,10 +27,10 @@ class Log:
     If is_verbose is True INFO level is set
     If redirect is passed log messages are appended to the file specified
     """
-    def __init__(self, **kwargs):
-        self.is_debug = kwargs.get("is_debug", False)
-        self.is_verbose = kwargs.get("is_verbose", False)
-        self.redirect = kwargs.get("redirect")
+    def __init__(self, is_debug=False, is_verbose=False, redirect=None):
+        self.is_debug = is_debug
+        self.is_verbose = is_verbose
+        self.redirect = redirect
 
         if self.is_debug:
             logger.setLevel(logging.DEBUG)
